@@ -10,7 +10,7 @@ Why the name? Docker + Backup = Dockup
 You have a container running with one or more volumes:
 
 ```
-$ docker run -d --name mysql tutum/mysql
+$ docker run -d --name mysql mysql
 ```
 
 From executing a `$ docker inspect mysql` we see that this container has two volumes:
