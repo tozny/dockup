@@ -1,8 +1,6 @@
 
 # Dockup
 
-[![Deploy to Tutum](https://s.tutum.co/deploy-to-tutum.svg)](https://dashboard.tutum.co/stack/deploy/)
-
 Docker image to backup your Docker container volumes
 
 Why the name? Docker + Backup = Dockup
@@ -31,7 +29,7 @@ Launch `dockup` container with the following flags:
 $ docker run --rm \
 --env-file env.txt \
 --volumes-from mysql \
---name dockup tutum/dockup:latest
+--name dockup tozny/dockup:latest
 ```
 
 The contents of `env.txt` being:
@@ -77,6 +75,3 @@ These rules are enforced in some regions.
 
 
 To perform a restore launch the container with the RESTORE variable set to true
-
-
-![](http://s.tutum.co.s3.amazonaws.com/support/images/dockup-readme.png)

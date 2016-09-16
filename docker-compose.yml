@@ -1,0 +1,10 @@
+dockup:
+  tty: true
+  build: .
+  stdin_open: true
+  env_file:
+    - dockup.env
+    # x.env is not to be put in GIT!
+    - x.env
+  volumes:
+    - letsencrypt-certs:/etc/letsencrypt/
