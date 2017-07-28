@@ -15,7 +15,7 @@ if [[ ! -z "$PASSPHRASE" ]]; then
   rm $LAST_BACKUP
   # set backup filename to one without .gpg extension
   LAST_BACKUP="$(basename "$LAST_BACKUP" .gpg)"
-else
+fi
 
 # Extract backup
 tar xzf $LAST_BACKUP $RESTORE_TAR_OPTION

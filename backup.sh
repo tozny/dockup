@@ -15,7 +15,7 @@ if [[ ! -z "$PASSPHRASE" ]]; then
   # remove plaintext one after encryption is done
   rm $tarball
   tarball="$tarball.gpg"
-else
+fi
 
 # Create bucket, if it doesn't already exist
 BUCKET_EXIST=$(aws s3 ls | grep $S3_BUCKET_NAME | wc -l)
