@@ -4,7 +4,5 @@ dockup:
   stdin_open: true
   env_file:
     - dockup.env
-    # x.env is not to be put in GIT!
-    - x.env
   volumes:
-    - letsencrypt-certs:/etc/letsencrypt/
+    - docker-volume-name:/mounted/at/point/
