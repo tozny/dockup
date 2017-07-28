@@ -1,6 +1,7 @@
 FROM alpine:3.4
 
-RUN apk add --no-cache bash py-pip && pip install awscli
+RUN apk add --no-cache bash py-pip gnupg \
+  && pip install awscli
 
 ADD backup.sh /backup.sh
 ADD restore.sh /restore.sh
