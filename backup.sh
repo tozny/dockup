@@ -2,6 +2,10 @@
 export PATH=$PATH:/usr/bin:/usr/local/bin:/bin
 # Get timestamp
 : ${BACKUP_SUFFIX:=.$(date +"%Y-%m-%d-%H-%M-%S")}
+
+# create backups in docker volume directory
+cd /tmp/backups/
+
 tarball=$BACKUP_NAME$BACKUP_SUFFIX.tar.gz
 
 # Create a gzip compressed tarball with the volume(s)

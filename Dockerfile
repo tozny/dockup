@@ -8,4 +8,6 @@ ADD restore.sh /restore.sh
 ADD run.sh /run.sh
 RUN chmod 755 /*.sh
 
+VOLUME /tmp/backups/
+
 CMD ["/run.sh"]
