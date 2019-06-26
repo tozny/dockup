@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM alpine:3.9
 
 RUN apk add --no-cache bash py-pip gnupg \
   && pip install awscli
